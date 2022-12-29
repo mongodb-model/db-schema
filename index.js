@@ -63,6 +63,10 @@ class Schema extends require("./base") {
     return string;
   }
 
+  makeNativeSchema(name = 'User', input = {}){
+    return {name, input};
+  }
+
     makeSchema(name = 'User', input = {}, type = 'object', output = {}){
         // if(typeof(input) !== 'object') return `${input} must be on object ...`;
         if(Object.keys(output).length == 0){
@@ -140,3 +144,5 @@ class Schema extends require("./base") {
 }
 
 module.exports = Schema;
+
+

@@ -15,7 +15,7 @@
  */
 
 
-const Schema = require('schema')
+const Schema = require('@mongodb-model/schema')
 class CLI extends require("../base") {
 
   constructor(...arrayOfObjects) {
